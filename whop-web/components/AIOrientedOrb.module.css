@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.orb {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--orb-gradient);
+  position: relative;
+  z-index: 2;
+  animation: float 4s ease-in-out infinite;
+  box-shadow: inset -5px -5px 15px rgba(0, 0, 0, 0.2),
+              inset 5px 5px 15px rgba(255, 255, 255, 0.4);
+}
+
+.glow {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: var(--accent);
+  filter: blur(40px);
+  opacity: 0.4;
+  z-index: 1;
+  animation: pulse-glow 3s infinite;
+}

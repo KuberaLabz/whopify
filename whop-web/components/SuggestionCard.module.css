@@ -1,0 +1,20 @@
+.card {
+  padding: 10px 24px;
+  border-radius: 99px;
+  background: white;
+  border: 1px solid var(--sidebar-border);
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-inter);
+  font-size: 0.9rem;
+  color: var(--foreground);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.card:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 77, 0, 0.2);
+}
